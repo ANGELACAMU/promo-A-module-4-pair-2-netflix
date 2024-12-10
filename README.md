@@ -22,10 +22,10 @@
  #4.4 ()
  -1.Buscar cuantas películas como favorita tiene cada usuario.
  -2.Buscar el usuario con mayor cantidad de películas favoritas.
- -3.1. Descarga el proyecto
+ -3.1. Descarga el proyecto X
 
- #4.5 ()
- -1. Arranca el backend
- -3. Arranca el front end
- -4. Prueba el proyecto
- -5. Entiende el código del proyecto
+ #4.5 (X)
+ -1. Arranca el backend X
+ -3. Arranca el front end X
+ -4. Prueba el proyecto X
+ -5. Entiende el código del proyecto X
