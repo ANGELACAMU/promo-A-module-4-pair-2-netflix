@@ -16,5 +16,16 @@
 
 #4.3 (not finished)
  -1.Piensa qué relación es X
- -2.Crea la relación User-Movies
+ -2.Crea la relación User-Movies X
  -3.Crea la relación Movies-Actors
+
+ #4.4 ()
+ -1.Buscar cuantas películas como favorita tiene cada usuario.
+ -2.Buscar el usuario con mayor cantidad de películas favoritas.
+ -3.1. Descarga el proyecto
+
+ #4.5 ()
+ -1. Arranca el backend
+ -3. Arranca el front end
+ -4. Prueba el proyecto
+ -5. Entiende el código del proyecto
