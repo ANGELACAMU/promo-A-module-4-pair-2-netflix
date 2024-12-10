@@ -14,10 +14,10 @@
       ·3. Sobre los usuarios X
   *faltan los bonus*
 
-#4.3 (not finished)
+#4.3 ()
  -1.Piensa qué relación es X
- -2.Crea la relación User-Movies X
- -3.Crea la relación Movies-Actors
+ -2.Crea la relación User-Movies 
+ -3.Crea la relación Movies-Actors X
 
  #4.4 ()
  -1.Buscar cuantas películas como favorita tiene cada usuario.
