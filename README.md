@@ -29,3 +29,8 @@
  -3. Arranca el front end X
  -4. Prueba el proyecto X
  -5. Entiende el código del proyecto X
+
+ #4.6 (X)
+ -1. Pide todas las películas X
+      ·En el front X
+      ·En el back X
