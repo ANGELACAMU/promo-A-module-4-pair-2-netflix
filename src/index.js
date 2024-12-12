@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const mysql = require('mysql2/promise');
 
 // create and config server
 const server = express();
@@ -35,6 +36,15 @@ const fakeMovies = [
     director: "Christopher Nolan",
   },
 ];
+
+async function getDBConection() {
+  const conection = await mysql.createConnection({
+    host: localhost,
+    user: root,
+    password:
+      database:
+  })
+}
 
 server.get("/movies", (request, response) => {
   response.status(200).json({ success: true, movies: fakeMovies })
