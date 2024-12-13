@@ -42,7 +42,8 @@ async function getDBConnection() {
     host: "w8qfc.h.filess.io",
     user: "Netflix_cornstaymy",
     password: "a00e8c9370b083921d9abd658c326bd0c654db0e",
-    database: "Netflix_cornstaymy"
+    database: "Netflix_cornstaymy",
+    port: 3307
   })
 
   connection.connect();
