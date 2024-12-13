@@ -37,15 +37,23 @@ const fakeMovies = [
   },
 ];
 
-async function getDBConection() {
-  const conection = await mysql.createConnection({
-    host: localhost,
-    user: root,
-    password:
-      database:
+async function getDBConnection() {
+  const connection = await mysql.createConnection({
+    host: "w8qfc.h.filess.io",
+    user: "Netflix_cornstaymy",
+    password: "a00e8c9370b083921d9abd658c326bd0c654db0e",
+    database: "Netflix_cornstaymy"
   })
+
+  connection.connect();
+  return connection;
 }
 
-server.get("/movies", (request, response) => {
-  response.status(200).json({ success: true, movies: fakeMovies })
+server.get("/movies", async (request, response) => {
+  //response.status(200).json({ success: true, movies: fakeMovies })
+  const connection = await getDBConnection();
+  const sqlQuery = "SELECT * FROM movies";
+  const result = await connection.query(sqlQuery);
+  response.json({});
+  console.log(result);
 })
