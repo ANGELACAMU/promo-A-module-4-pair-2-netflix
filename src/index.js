@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2/promise');
+const bcrypt = require('bcrypt');
 
 // create and config server
 const server = express();
@@ -37,6 +38,9 @@ const fakeMovies = [
   },
 ];
 
+
+
+
 async function getDBConnection() {
   const connection = await mysql.createConnection({
     host: "w8qfc.h.filess.io",
@@ -50,11 +54,21 @@ async function getDBConnection() {
   return connection;
 }
 
+//endpoint
+
+server.post("/user/register", async (req, res) => {
+  console.log(req.body);
+  const { username, email, password } = req.body;
+  const connection = await getDBConnection();
+  //crear variable incriptada(NOS HEMOS QUEDADO AQUIIIIIIIIIIIIIIIIIIIII)
+  res.json({});
+});
+
 server.get("/movies", async (request, response) => {
   //response.status(200).json({ success: true, movies: fakeMovies })
   const connection = await getDBConnection();
   const sqlQuery = "SELECT * FROM movies";
   const result = await connection.query(sqlQuery);
   response.json({});
-  console.log(result);
+
 })
